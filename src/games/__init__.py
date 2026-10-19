@@ -1,5 +1,6 @@
-import games.simple_bounce as sb
+# import games.simple_bounce as bounce
+import games.double_bounce as bounce
 
 
 def main():
-    sb.run()
+    bounce.run()
