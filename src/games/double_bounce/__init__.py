@@ -48,14 +48,14 @@ def run():
         ballB.x += ballBDx * dt * 300
         ballB.y += ballBDy * dt * 300
 
-        if ballA.x <= 24 or ballA.x >= WIDTH - 24:
+        if ballA.x <= RADIUS or ballA.x >= WIDTH - RADIUS:
             ballADx = -ballADx
-        if ballA.y <= 24 or ballA.y >= HEIGHT - 24:
+        if ballA.y <= RADIUS or ballA.y >= HEIGHT - RADIUS:
             ballADy = -ballADy
 
-        if ballB.x <= 24 or ballB.x >= WIDTH - 24:
+        if ballB.x <= RADIUS or ballB.x >= WIDTH - RADIUS:
             ballBDx = -ballBDx
-        if ballB.y <= 24 or ballB.y >= HEIGHT - 24:
+        if ballB.y <= RADIUS or ballB.y >= HEIGHT - RADIUS:
             ballBDy = -ballBDy
 
         # collision detection
